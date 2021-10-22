@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="dashboard.css" rel="stylesheet" />
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <title>Sidebar Admin</title>
+
+    <!-- STYLE -->
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="toggleNav navbar navbar-dark sticky-top flex-md-nowrap p-0 pt-1 pb-1 d-md-none d-lg-none">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"> <img src="" alt=""> </a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+    </header>
+    <div class="container-fluid">
+      <div class="row" >
+
+        <!-- Sidebar Start -->
+        <nav
+          id="sidebarMenu"
+          class="col-md-3 col-lg-2 d-md-block sidebar collapse" 
+        >
+          <div class="d-flex align-items-center justify-content-center pt-1">
+            <img src="images/enragri-logo.png" alt="logo-enragri" />
+          </div>
+          <div class="d-flex align-items-center justify-content-center mt-3">
+            <input
+              class="search form-control form-control-sm"
+              type="text"
+              placeholder="Recherche"
+              aria-label=".form-control-sm example"
+            />
+          </div>
+          <div class="pt-3" >
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">
+                  <i class="fi fi-rr-apps"></i>
+                  Dashboard
+                </a>
+              </li>
+              
+               <!-- Base des données Start-->
+
+              <li class="nav-item">
+                <a class="nav-link " data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                  <i class="fi fi-rr-database"></i> Base de données
+                </a>
+                <ul class="collapse multi-collapse" id="multiCollapseExample1">
+                  <li class="list-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                      <i class="fi fi-rr-paint-brush"></i>
+                      Conception
+                    </a>
+                  </li>
+                  <li class="list-item"><a class="nav-link" aria-current="page" href="#">
+                    <i class="fi fi-rr-building"></i>
+                    Construction
+                  </a></li>
+                  <li class="list-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                      <i class="fi fi-rr-layers"></i>
+                      Exploitation
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- Base des données End-->
+
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <i class="fi fi-rr-address-book"></i>
+                  Liste clients
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fi fi-rr-truck-side"></i>
+                  Liste fournisseurs
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fi fi-rr-user"></i>
+                  Staff
+                </a>
+              </li>
+            </ul>
+
+            <hr />
+            <ul class="nav flex-column mb-2">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fi fi-rr-settings"></i>
+                  Paramètres
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fi fi-rr-interrogation"></i>
+                  Aide
+                </a>
+              </li>
+            </ul>
+              <hr />
+              <ul class="nav flex-column mb-1 " aria-expanded="false">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                  <i class="fi fi-rr-sign-out"></i>
+                  Déconnexion
+                  </a>
+              </li>
+            </ul>
+            
+          </div>
+        </ul>
+     
+        
+        </nav>
+
+        <!-- Sidebar End -->
+        
+    
+      </div>
+    </div>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+      integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"
+      integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha"
+      crossorigin="anonymous"
+    ></script>
+    <script src="dashboard.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
